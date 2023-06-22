@@ -61,6 +61,7 @@ def test_find_suitable_user():
     # assert suitable_users == {"name": "Olga", "age": 45}
 
     # TODO найдите всех пользователей младше 20 лет
+    #list comprehension
     suitable_users = [i for i in users if i['age'] < 20]
     assert suitable_users == [
         {"name": "Stanislav", "age": 15},
