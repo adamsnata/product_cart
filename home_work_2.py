@@ -83,7 +83,7 @@ def test_find_suitable_user():
 def readable_function1(func, *args, **kwargs):
     func_name = func.__name__.replace('_', ' ').title()
     arg_name = ", ".join([*args, *kwargs.values()])
-
+    print(f'{func_name} [{arg_name}]')
     return (f'{func_name} [{arg_name}]')
 
 
